@@ -16,7 +16,7 @@ function win(board, sign) {
     n = board.length;
 
   for (var i = 0; i < n; i++) {
-    for (var j = 0;  j < n - 1 ; j++)
+    for (var j = 0; j < n - 1; j++)
         check = (check && (board[i][j] == board[i][j+1]) && (board[i][j+1] == sign)) || // horizontals
                 (check && (board[j][i] == board[j+1][i]) && (board[j+1][i] == sign));   // verticals
     if (check) 
