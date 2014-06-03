@@ -1,3 +1,5 @@
+"use strict"
+
 var zip = function() {
 	var 
 		arg = arguments, // !!!!!!!!!!!!! защо ?????
@@ -16,4 +18,8 @@ var zip = function() {
 	return result;
 
 }
-exports.zip=zip;
+console.log(zip([1,2,3],[4,5,6]));
+console.log(zip([1,2],[4,5],[6,7]));
+
+
+exports.zip = zip;

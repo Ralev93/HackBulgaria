@@ -17,12 +17,8 @@ var contains = function (element, arr) {
 
  helper(0);
 */
-
 	return arr.some(function (i) {
 		return i === element;
 	})
 };
-
-//contains(2, [1, 2, 4]);
-
 exports.contains = contains;

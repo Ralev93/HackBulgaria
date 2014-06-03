@@ -1,7 +1,5 @@
 var komara  = require("./sumOfDiv").sumDiv;
 
-
-
 /*
 sum_of_divisors(8) === 15
 sum_of_divisors(7) === 8

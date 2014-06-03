@@ -1,3 +1,25 @@
+"use strict"
+
+var groupBy = function(groupingFunction, arr) {
+	var result = {};
+	
+	 arr.forEach(function(elem) {
+    var group = groupingFunction(elem).toString();
+		if (!result[group]) {
+			result[group] = [];
+		}
+		result[group].push(elem);
+		
+	});
+	return result;
+}
+exports.groupBy = groupBy;
+
+//---------------------------------
+
+console.log(groupBy(function(name) {
+  return name.course;
+}, names));
 
 var names = [{
   "name" : "Daniel Taskoff",
@@ -15,23 +37,3 @@ var names = [{
   "name" : "Nikola Dichev",
   "course" : "Core Java"
 }];
-
-var numbers = [1,2,3,4,5,6,7,8,9];
-
-var groupBy = function(groupingFunction, arr) {
-	var result = {}
-	
-	 arr.forEach(function(elem) {
-    var group = groupingFunction(elem).toString();
-		if (!result[group]) {
-			result[group] = [];
-		}
-		result[group].push(elem);
-		
-	})
-	return result;
-}
-
-console.log(groupBy(function(name) {
-  return name.course;
-}, names));

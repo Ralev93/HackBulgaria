@@ -1,5 +1,6 @@
-var always = function(value) {
+"use strict"
 
+var always = function(value) {
 	return function() {
 		return value;
 	};

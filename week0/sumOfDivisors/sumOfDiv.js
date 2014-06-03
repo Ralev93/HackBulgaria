@@ -1,7 +1,6 @@
 "use strict"
 
 var sum_of_divisors = function(n) {
- 
  var 
  	arr = [],
  	sum = 0;
@@ -10,8 +9,8 @@ var sum_of_divisors = function(n) {
  	arr[i-1] = i;  
  }
 
- arr = arr.filter(function (elementOfArray) {
-  return (n % elementOfArray === 0);})
+ arr = arr.filter(function (elem) {
+  return (n % elem === 0);})
 
  for (var i = 0; i < arr.length; i++) {
   	sum += arr[i];

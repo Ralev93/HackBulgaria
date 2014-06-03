@@ -1,5 +1,3 @@
-"use strict"
-
 var pluck = function(property, arr) {
 
 	var result = [];

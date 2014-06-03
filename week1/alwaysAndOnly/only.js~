@@ -1,5 +1,3 @@
-"use strict"
-
 var only = function(type, arr) {
 	var boolArr = arr.map(function (elem) {
 		return typeof elem === type;
@@ -8,4 +6,3 @@ var only = function(type, arr) {
 		return bl === true;
 		});
 }
-
