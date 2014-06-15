@@ -30,7 +30,6 @@ function nullarize() {
 };
 
 $(document).ready(function() {
-
 	$("#minutes").on("click keypress", function () {
 			var minutes = parseInt($("#minutes").val(), 10);
 
