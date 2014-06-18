@@ -46,7 +46,7 @@ $(document).ready(function() {
   $("#startDown").on("click", function() {
     terminate();
     var 
-	  m = minutes,
+      m = minutes,
       s = seconds;
     
     begin(function () {
