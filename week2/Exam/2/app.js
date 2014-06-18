@@ -5,23 +5,10 @@ var
   seconds = 0;
 
 var appendTimer = function (min, sec) {
-  if (sec < 10) { 
-    $("#second-second-digit").text(sec.toString()[0]);
-    $("#second-first-digit").text(0);
-  }
-  else {
-    $("#second-second-digit").text(sec.toString()[1]);
-    $("#second-first-digit").text(sec.toString()[0]);
-  }
-  
-  if (min < 10) { 
-    $("#minute-second-digit").text(min.toString()[0]);
-    $("#minute-first-digit").text(0);
-  }
-  else {
-    $("#minute-second-digit").text(min.toString()[1]);
-    $("#minute-first-digit").text(min.toString()[0]);
-  }
+  $("#second-second-digit").text(sec%10);
+  $("#second-first-digit").text(Math.floor(sec/10)%10);
+  $("#minute-second-digit").text(min%10);
+  $("#minute-first-digit").text(Math.floor(min/10)%10);
 };
 
 function terminate() {
